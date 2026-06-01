@@ -1,0 +1,56 @@
+:root {
+  /* Fundos */
+  --bg-primary:    #6b0f1a;  /* fundo principal */
+  --bg-secondary:  #4a0812;  /* fundo nav / seções alternadas */
+  --bg-dark:       #3a060f;  /* cards e caixas */
+  --bg-darker:     #2a0408;  /* footer / elementos mais fundos */
+
+  /* Dourado */
+  --gold:          #d4a843;  /* destaque principal, botões, títulos */
+  --gold-muted:    #c9a060;  /* textos secundários dourados */
+  --gold-dark:     #8a6040;  /* labels, textos terciários */
+
+  /* Texto */
+  --text-white:    #ffffff;  /* títulos em destaque */
+  --text-cream:    #f5e6c0;  /* texto principal sobre fundo escuro */
+  --text-muted:    #c9a878;  /* descrições e parágrafos */
+  --text-faint:    #a07850;  /* textos suaves, subtítulos */
+  --text-dim:      #5a3020;  /* placeholders, copyright */
+
+  /* Bordas */
+  --border-gold:   rgba(212, 168, 67, 0.15);  /* bordas sutis */
+  --border-accent: rgba(212, 168, 67, 0.25);  /* bordas com mais presença */
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: var(--bg-secondary);
+}
+
+nav a {
+  color: var(--text-cream);
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+.logo img {
+    height: 50px; 
+    width: auto; 
+    display: block;
+}
+
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-cream);
+}
+
+h1, h2 {
+color: var(--text-white);
+text-align: left;
+margin-top: 50px;
+font-family: 'Arial', sans-serif;
+}
