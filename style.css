@@ -21,6 +21,17 @@
   --border-gold:   rgba(212, 168, 67, 0.15);  /* bordas sutis */
   --border-accent: rgba(212, 168, 67, 0.25);  /* bordas com mais presença */
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-primary);
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -31,26 +42,37 @@ header {
 
 nav a {
   color: var(--text-cream);
+  width: 100%;
   text-decoration: none;
-  margin: 0 15px;
-  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  padding-left: 80px;
+  padding-right: 20px;
+   box-sizing: border-box;
 }
 
-.logo img {
-    height: 50px; 
-    width: auto; 
-    display: block;
-}
-
-
-body {
+#comeco {
+  min-height: calc(100vh - 70px); /* 100% da tela MENOS a altura do header */
   background-color: var(--bg-primary);
-  color: var(--text-cream);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 44px;
 }
 
-h1, h2 {
-color: var(--text-white);
-text-align: left;
-margin-top: 50px;
-font-family: 'Arial', sans-serif;
+.comeco-texto {
+  color: var(--text-cream);
+  width: 50%;
 }
+
+.comeco-texto texto-sec {
+  color: var(--text-muted);
+  margin-top: 20px;
+  font-size: 1.2em;
+}
+
+.imagem-rony {
+  width: 65%;
+  transform: scaleX(-1);
+}
+
