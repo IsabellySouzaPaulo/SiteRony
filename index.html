@@ -1,57 +1,240 @@
-<!-- git add . / git commit -m "Descrição da alteração" / git push-->
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/rony_icone.png" type="image/x-icon"> <!-- Ícone do site -->
+    <link rel="shortcut icon" href="img/rony_icone.png" type="image/x-icon">
     <title>Rony Eventos e Buffet</title>
-    <link rel="stylesheet" href="style.css"> <!-- Link para o arquivo CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header> <!-- "Header" é a seção de cabeçalho do site -->
-        <div class="logo"><img src="img/rony_logo.png" alt="Logo"></div>
-        <nav>
-            <a href="#servicos">Serviços</a>
-            <a href="#galeria">Galeria</a>
-            <a href="#orcamento">Orçamento</a>
-            <a href="#sobrenos">Sobre nós</a>
-        </nav>
-    </header>
 
-    <main> <!-- "Main" é a seção principal do site -->
-        <section id="comeco">
-        <div class="comeco-texto">
-        <h1>Transforme sua festa em uma <strong>experiência inesquecível!</strong></h1>
-        <p class="texto-sec">Aqui você encontra uma variedade de serviços para eventos e buffets. <br> Explore nosso catálogo e encontre tudo o que precisa para tornar suas celebrações inesquecíveis!</p> <!-- "P" é Paragrafo -->
+    <!-- ── HERO ── -->
+    <section id="comeco">
+        <header>
+    <div class="logo">
+        <img src="img/rony_logo2.png" alt="Rony Eventos e Buffet">
+    </div>
+    <button class="menu-hamburguer" id="menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+    <nav class="nav-menu" id="nav-menu">
+        <a href="#servicos">Serviços</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#orcamento">Orçamento</a>
+        <a href="#sobrenos">Sobre nós</a>
+    </nav>
+</header>
+        <div class="comeco-conteudo">
+            <div class="comeco-texto">
+                <p class="comeco-tag">Buffet & Eventos · Rondonópolis — MT</p>
+                <h1>Transforme sua festa em uma <strong>experiência inesquecível!</strong></h1>
+                <p class="texto-sec">Buffet completo, feito com dedicação e sabor. Atendemos casamentos, aniversários, formaturas e eventos corporativos em toda a região.</p>
+                <div class="comeco-btns">
+                    <button class="btn-orcamento" data-scroll>Solicitar orçamento</button>
+                    <a class="btn-whatsapp" href="https://wa.me/5566999542067" target="_blank">
+                        <img src="img/whatsapp.png" alt="WhatsApp">+55 66 99954-2067
+                    </a>
+                </div>
+            </div>
         </div>
-        <img class="imagem-rony" src="img/RonyPreto.png" alt="Imagem Rony"> <!-- Imagem Rony -->
-        </section>
+        <div class="scroll-hint">
+            <span>&#8595;</span>
+        </div>
+    </section>
 
+    <main>
+
+        <!-- ── SERVIÇOS ── -->
         <section id="servicos">
-            <h2>Serviços</h2>
-            <p>Informações sobre os serviços oferecidos.</p>
+            <div class="sec-header">
+                <p class="sec-tag">O que oferecemos</p>
+                <h2>Nossos Serviços</h2>
+                <div class="sec-linha"></div>
+            </div>
+            <div class="servicos-grid">
+                <div class="servico-card">
+                    <!-- <img src="img/servico1.jpg" alt="Buffet Completo"> -->
+                    <div class="servico-img placeholder-img"><img src="img/buffet_completo600.jpg" alt=""></div>
+                    <div class="servico-info">
+                        <h3>Buffet Completo</h3>
+                        <p>Pratos quentes, frios, sobremesas e bebidas. Cardápio personalizado do almoço ao jantar.</p>
+                    </div>
+                </div>
+                <div class="servico-card destaque">
+                    <!-- <img src="img/servico2.jpg" alt="Churrasco Premium"> -->
+                    <div class="servico-img placeholder-img"><img src="img/churrasco800.jpg" alt=""></div>
+                    <div class="servico-info">
+                        <h3>Churrasco</h3>
+                        <p>Carnes selecionadas, assadas na hora com todo o sabor e cuidado que seu evento merece.</p>
+                    </div>
+                </div>
+                <div class="servico-card">
+                    <!-- <img src="img/servico3.jpg" alt="Eventos Corporativos"> -->
+                    <div class="servico-img placeholder-img"><img src="img/celebracao800.jpg" alt=""></div>
+                    <div class="servico-info">
+                        <h3>Eventos Corporativos</h3>
+                        <p>Coffee breaks, confraternizações e eventos empresariais com estrutura e atendimento profissional.</p>
+                    </div>
+                </div>
+                <div class="servico-card">
+                    <!-- <img src="img/servico4.jpg" alt="Festas e Celebrações"> -->
+                    <div class="servico-img placeholder-img"><img src="img/festa800.jpg" alt=""></div>
+                    <div class="servico-info">
+                        <h3>Festas & Celebrações</h3>
+                        <p>Casamentos, aniversários e formaturas. Cuidamos de cada detalhe para você aproveitar o momento.</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
+        <!-- ── NÚMEROS ── -->
+        <section id="numeros">
+            <div class="numeros-grid">
+                <div class="numero-item">
+                    <span class="numero-valor">100<span class="numero-plus">+</span></span>
+                    <span class="numero-label">Eventos realizados</span>
+                </div>
+                <div class="numero-item">
+                    <span class="numero-valor">10<span class="numero-plus">+</span></span>
+                    <span class="numero-label">Anos de experiência</span>
+                </div>
+                <div class="numero-item">
+                    <span class="numero-valor">98<span class="numero-plus">%</span></span>
+                    <span class="numero-label">Clientes satisfeitos</span>
+                </div>
+                <div class="numero-item">
+                    <span class="numero-valor">10<span class="numero-plus">+</span></span>
+                    <span class="numero-label">Pratos no cardápio</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ── GALERIA ── -->
         <section id="galeria">
-            <h2>Galeria</h2>
-            <p>Imagens dos nossos trabalhos.</p>
+            <div class="sec-header">
+                <p class="sec-tag">Nossos trabalhos</p>
+                <h2>Galeria</h2>
+                <div class="sec-linha"></div>
+                <p class="sec-desc">Cada evento é único. Veja um pouco do que já realizamos.</p>
+            </div>
+            <div class="galeria-grid">
+                <!-- <img src="img/galeria1.jpg" alt="Evento 1"> -->
+                <div class="galeria-item grande placeholder-img"><img src="img/galeria1.jpg" alt=""></div>
+                <div class="galeria-item placeholder-img"><img src="img/galeria2.jpg" alt=""></div>
+                <div class="galeria-item placeholder-img"><img src="img/galeria3.jpg" alt=""></div>
+                <div class="galeria-item placeholder-img"><img src="img/galeria4.jpg" alt=""></div>
+                <div class="galeria-item placeholder-img"><img src="img/galeria5.jpg" alt=""></div>
+            </div>
         </section>
 
+        <!-- ── ORÇAMENTO ── -->
         <section id="orcamento">
-            <h2>Orçamento</h2>
-            <p>Solicite seu orçamento personalizado.</p>
+            <div class="orcamento-wrap">
+                <div class="orcamento-texto">
+                    <p class="sec-tag">Fale conosco</p>
+                    <h2>Solicite seu orçamento</h2>
+                    <div class="sec-linha"></div>
+                    <p>Conte-nos sobre seu evento e faremos um buffet sob medida para você. Atendemos Rondonópolis e toda a região de Mato Grosso.</p>
+                    <div class="orcamento-contatos">
+                        <div class="contato-item">
+                            <span class="contato-icon">📞</span>
+                            <span>66 9 9954-2067</span>
+                        </div>
+                        <div class="contato-item">
+                            <span class="contato-icon">📍</span>
+                            <span>Rondonópolis — MT</span>
+                        </div>
+                        <div class="contato-item">
+                            <span class="contato-icon">📸</span>
+                            <span>@ronyeventosebuffet</span>
+                        </div>
+                    </div>
+                </div>
+                <form class="orcamento-form" id="form-orcamento">
+                    <p class="form-titulo">Sua proposta</p>
+                    <div class="form-grupo">
+                        <label>Nome completo</label>
+                        <input type="text" id="nome" placeholder="Seu nome">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-grupo">
+                            <label>Telefone</label>
+                            <input type="text" id="telefone" placeholder="(66) 9...">
+                        </div>
+                        <div class="form-grupo">
+                            <label>Data do evento</label>
+                            <input type="text" id="data" placeholder="DD/MM/AAAA">
+                        </div>
+                    </div>
+                    <div class="form-grupo">
+                        <label>Tipo de evento</label>
+                        <input type="text" id="tipo" placeholder="Casamento, aniversário, formatura...">
+                    </div>
+                    <div class="form-grupo">
+                        <label>Número de convidados</label>
+                        <input type="text" id="convidados" placeholder="Aproximadamente quantas pessoas?">
+                    </div>
+                    <div class="form-grupo">
+                        <label>Mensagem</label>
+                        <textarea id="mensagem" placeholder="Conte mais sobre seu evento..."></textarea>
+                    </div>
+                    <button type="button" id="btn-enviar" class="btn-orcamento" style="width:100%; margin-top:8px;">
+                        Enviar pelo WhatsApp
+                    </button>
+                </form>
+            </div>
         </section>
 
+        <!-- ── SOBRE NÓS ── -->
         <section id="sobrenos">
-            <h2>Sobre nós</h2>
-            <p>Informações sobre a empresa ou projeto.</p>
+            <div class="sobre-wrap">
+                <div class="sobre-fotos">
+                    <!-- <img src="img/sobre1.jpg" alt="Sobre nós"> -->
+                    <div class="sobre-foto-grande placeholder-img"><img src="img/sobre_nos1.jpg" alt=""></div>
+                    <div class="sobre-fotos-pequenas">
+                        <div class="placeholder-img"><img src="img/sobre_nos2.jpg" alt=""></div>
+                        <div class="placeholder-img"><img src="img/sobre_nos3.jpg" alt=""></div>
+                    </div>
+                </div>
+                <div class="sobre-texto">
+                    <p class="sec-tag">Nossa história</p>
+                    <h2>Paixão por gastronomia e eventos</h2>
+                    <div class="sec-linha"></div>
+                    <p>A Rony Eventos e Buffet nasceu da paixão por unir boa comida e momentos especiais. Atuamos em Rondonópolis e região com uma equipe dedicada a fazer cada evento ser único.</p>
+                    <p style="margin-top: 16px;">Nosso compromisso é com a qualidade dos ingredientes, o capricho na apresentação e o calor no atendimento — porque cada festa merece o melhor.</p>
+                    <a class="btn-orcamento" href="#orcamento" style="display:inline-block; margin-top:32px; text-decoration:none;">Fale com a gente</a>
+                </div>
+            </div>
         </section>
+
     </main>
 
+    <!-- ── FOOTER ── -->
     <footer>
-        <p>&copy; 2026 Meu Site. Todos os direitos reservados.</p>
+        <div class="footer-conteudo">
+            <div class="footer-logo">
+                <img src="img/rony_logo2.png" alt="Rony Eventos e Buffet">
+            </div>
+            <div class="footer-links">
+                <a href="#servicos">Serviços</a>
+                <a href="#galeria">Galeria</a>
+                <a href="#orcamento">Orçamento</a>
+                <a href="#sobrenos">Sobre nós</a>
+            </div>
+            <div class="footer-contato">
+                <p>66 9 9954-2067</p>
+                <p>Rondonópolis — MT</p>
+            </div>
+        </div>
+        <div class="footer-copy">
+            <p>&copy; 2026 Rony Eventos e Buffet · Todos os direitos reservados</p>
+        </div>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
